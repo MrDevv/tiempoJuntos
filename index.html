@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesNieve.css">
+    <script src="https://kit.fontawesome.com/439de6b9af.js" crossorigin="anonymous"></script>
+    <title>Nuestro tiempo juntos 🌱</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contador">
+          <img class="plantita" src="images/plantita.png" alt="plantita">
+          <img class="corazon" src="images/corazon.png" alt="corazon">
+          <div class="titulo">
+            <p>Nuestro tiempo juntos</p>
+          </div>
+          <div class="cuerpo">
+            <div class="caja">
+              <span id="anios"></span>
+              <span>años</span>
+            </div>
+            <div class="caja">
+              <span id="meses"></span>
+              <span>meses</span>
+            </div>
+            <div class="caja">
+              <span id="dias"></span>
+              <span>días</span>
+            </div>
+            <div class="caja">
+              <span id="horas"></span>
+              <span>horas</span>
+            </div>
+            <div class="caja">
+              <span id="minutos"></span>
+              <span>minutos</span>
+            </div>
+            <div class="caja">
+              <span id="segundos"></span>
+              <span>segundos</span>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor_arbol">
+            <div class="arbol-wrapper">
+              <div class="gojo_hover"></div>
+              <img src="images/gojo.webp" alt="gojo" class="gojo">
+              <img src="images/gojo2.webp" alt="gojo 2" class="gojo2">
+              <img  class="arbol" src="arbolito.webp" alt="arbolito">
+              <img class="lazo_1" src="images/lazo.webp" alt="lazo">
+              <img class="image_1" src="images/IMG_20251115_191802.webp" alt="image 1">
+              <img class="lazo_2" src="images/lazo.webp" alt="lazo">
+              <img class="image_2" src="images/IMG-20250828-WA0135.webp" alt="image 2">
+              <img class="lazo_3" src="images/lazo.webp" alt="lazo">
+              <img class="image_3" src="images/IMG-20250830-WA0073.webp" alt="image 3">
+              <img class="lazo_4" src="images/lazo.webp" alt="lazo">
+              <img class="image_4" src="images/IMG-20251019-WA0019.webp" alt="image 4">
+              <img class="lazo_5" src="images/lazo.webp" alt="lazo">
+              <img class="image_5" src="images/IMG-20251206-WA0034.webp" alt="image 5">
+              <img class="lazo_6" src="images/lazo.webp" alt="lazo">
+              <img class="image_6" src="images/IMG-20250913-WA0116.webp" alt="image 6">
+              <img class="lazo_7" src="images/lazo.webp" alt="lazo">
+              <img class="image_7" src="images/IMG-20251206-WA0035.webp" alt="image 7">
+              <img class="lazo_8" src="images/lazo.webp" alt="lazo">
+              <img class="image_8" src="images/IMG-20251023-WA0065.webp" alt="image 8">
+              <img class="lazo_9" src="images/lazo.webp" alt="lazo">
+              <img class="image_9" src="images/IMG-20251108-WA0001.webp" alt="image 9">
+              <img class="lazo_10" src="images/lazo.webp" alt="lazo">
+              <img class="image_10" src="images/IMG-20251114-WA0140.webp" alt="image 10">
+              <img class="lazo_11" src="images/lazo.webp" alt="lazo">
+              <img class="image_11" src="images/IMG-20251217-WA0127.webp" alt="image 11">
+              <img class="lazo_12" src="images/lazo.webp" alt="lazo">
+              <img class="image_12" src="images/IMG-20251217-WA0129.webp" alt="image 12">
+              <img class="lazo_13" src="images/lazo.webp" alt="lazo">
+              <img class="image_13" src="images/IMG-20251219-WA0014.webp" alt="image 12">
+              <img id="sobre1" class="carta carta1" src="images/carta.webp" alt="carta">
+              <img hidden id="sobre2" class="carta carta2" src="images/carta.webp" alt="carta">              
+            </div>
+        </div>
+        
+        <div class="reproductor">
+          <div class="cabecera">
+            <h1 class="titulo">cargando...</h1>
+            <p class="autor">cargando...</p>
+            <i id="flow" class="arrow fa-solid fa-caret-down"></i>
+          </div>
+          <div class="cuerpo ocultar-reproductor">
+            <audio preload="metadata" id="cancion">
+                <source src="" type="audio/mpeg"/> 
+            </audio>
+            
+            <input class="progreso" type="range" value="0" id="progreso"/>  
+            <div class="contenedor_progreso">
+              <span id="tiempoActual">0:00</span>
+              <span id="tiempoTotal">0:00</span>
+            </div>
+            
+            <div class="controles">
+              <div>
+                <button class="atras control">
+                  <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button class="boton-reproducir-pausar iconoControl">
+                  <i class="fa-solid fa-play" id="iconoControl"></i>
+                </button>
+                <button class="adelante control">
+                  <i class="fa-solid fa-forward-step"></i>
+                </button>
+              </div>
+  
+              <div>
+                <i class="fa-solid fa-volume-high"></i>
+                <input class="volumen" type="range" id="volumen" min="0" max="1" step="0.01" value="0.5">
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="carta-1">
+      <img hidden src="images/marco-carta.webp" alt="marco carta" class="marco-carta">
+      <div class="cuerpo">
+        <p hidden class="texto"></p>
+      </div>
+      <div class="contenedor-boton">
+          <svg id="boton-cerrar-1" class="boton-cerrar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c-9.4 9.4-9.4 24.6 0 33.9l55 55-55 55c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l55-55 55 55c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-55-55 55-55c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-55 55-55-55c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+      </div>
+      <img hidden class="yuta-carta" src="images/yuta-carta.webp" alt="yuta carta">
+      <img hidden class="gojo-carta" src="images/gojo-carta.webp" alt="gojo carta">
+    </div>    
+    <div hidden class="carta-2">
+      <img hidden src="images/marco-carta.webp" alt="marco carta" class="marco-carta">
+
+      <div class="cuerpo">
+        <p hidden class="texto"></p>
+      </div>
+
+      <div class="contenedor-boton">
+        <svg id="boton-cerrar-2" class="boton-cerrar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM167 167c-9.4 9.4-9.4 24.6 0 33.9l55 55-55 55c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l55-55 55 55c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-55-55 55-55c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-55 55-55-55c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+      </div>
+      <img hidden class="yuta-maki-carta" src="images/IMG-20251230-WA0083.webp" alt="yuta y maki carta">
+    </div>
+
+
+    <div class="opacidad"></div>
+
+    <div class="tpl-snow">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+<script type="module" src="script.js"></script>
+</html>
