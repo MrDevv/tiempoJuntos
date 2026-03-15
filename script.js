@@ -162,6 +162,16 @@ const canciones = [
         titulo:'I Wanna Be Yours',
         autor:'Arctic Monkeys',
         fuente:'./musica/i_wanna_be_yours.mp3'
+    },
+    {
+        titulo:'Heaven',
+        autor:'Bryan Adams',
+        fuente:'./musica/heaven.mp3'
+    },
+    {
+        titulo:'Making Love Out of Nothing At All',
+        autor:'Air Supply',
+        fuente:'./musica/making_love_out_of_nothing_at_all.mp3'
     }
 ];
 
